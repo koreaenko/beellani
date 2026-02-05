@@ -16,6 +16,7 @@
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'Noto Sans KR', sans-serif;
+    --font-title: 'Pretendard', 'Noto Sans KR', sans-serif;
 
     --radius-md: 12px;
     --radius-lg: 20px;
@@ -33,7 +34,7 @@
 
 body {
     font-family: var(--font-body);
-    background: linear-gradient(180deg, var(--color-white) 0%, #F0FAF8 100%);
+    background: var(--color-white);
     color: var(--color-dark);
     line-height: 1.7;
     min-height: 100vh;
@@ -153,9 +154,83 @@ body {
     color: var(--color-primary-dark);
 }
 
+/* Price Item with Hover Image Preview */
+.price-item {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.price-item:hover {
+    color: var(--color-primary);
+}
+
+.price-item .hover-image {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    width: 280px;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+    pointer-events: none;
+    padding: 10px;
+}
+
+.price-item:hover .hover-image {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* Section Title Hover Image */
+.title-hover {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.title-hover:hover {
+    color: var(--color-primary);
+}
+
+.hover-image-large {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(10px);
+    width: 400px;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+    pointer-events: none;
+    padding: 10px;
+}
+
+.title-hover:hover .hover-image-large {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(5px);
+}
+
 /* Notice Section */
 .info-section.notice {
-    background: var(--color-light);
+    background: #FAFAFA;
     text-align: center;
 }
 
@@ -215,7 +290,7 @@ body {
 }
 
 .info-section.highlight {
-    background: linear-gradient(135deg, #E8F7F5 0%, var(--color-light) 100%);
+    background: #FAFAFA;
     border: 1px solid var(--color-accent);
 }
 
@@ -228,7 +303,7 @@ body {
 
 .course-item {
     padding: 1rem;
-    background: var(--color-light);
+    background: #FAFAFA;
     border-radius: var(--radius-md);
     border-left: 3px solid var(--color-primary);
 }
@@ -249,7 +324,7 @@ body {
 .curriculum-item {
     padding: 1rem;
     margin-bottom: 1rem;
-    background: var(--color-light);
+    background: #FAFAFA;
     border-radius: var(--radius-md);
     border-left: 3px solid var(--color-primary);
 }
@@ -326,11 +401,11 @@ body {
 }
 
 .brand-name {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    font-weight: 600;
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    font-weight: 700;
     color: var(--color-dark);
-    letter-spacing: 3px;
+    letter-spacing: -0.5px;
     margin-bottom: 0.3rem;
 }
 
@@ -382,7 +457,7 @@ body {
 
 .highlight-text {
     padding: 1rem;
-    background: linear-gradient(135deg, #E8F7F5 0%, var(--color-light) 100%);
+    background: #FAFAFA;
     border-radius: var(--radius-md);
     border-left: 3px solid var(--color-primary);
 }

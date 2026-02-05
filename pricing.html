@@ -10,35 +10,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
     <link rel="stylesheet" href="detail-page.css">
 </head>
 
 <body>
     <div class="page-container">
         <header class="page-header">
-            <a href="board.html" class="back-link">← 뒤로가기</a>
+            <a href="index.html" class="back-link">🏠 홈</a>
+            <a href="javascript:history.back()" class="back-link">← 뒤로가기</a>
             <h1 class="page-title">비용안내</h1>
         </header>
 
         <main class="page-content">
             <!-- 눈썹 -->
             <section class="info-section">
-                <h2 class="section-title">✨ 눈썹</h2>
+                <h2 class="section-title">눈썹</h2>
                 <table class="price-table">
                     <tr>
-                        <td>헤어스트록</td>
-                        <td class="price">여 35만 / 남 38만</td>
+                        <td class="price-item">
+                            헤어스트록
+                            <img src="images/hairstroke.png" alt="헤어스트록" class="hover-image">
+                        </td>
+                        <td class="price">여 38만 / 남 40만</td>
                     </tr>
                     <tr>
-                        <td>엠보</td>
+                        <td class="price-item">
+                            엠보
+                            <img src="images/embo.jpg" alt="엠보" class="hover-image">
+                        </td>
                         <td class="price">여 20만 / 남 22만</td>
                     </tr>
                     <tr>
-                        <td>그라데이션</td>
+                        <td class="price-item">
+                            그라데이션
+                            <img src="images/gra.jpg" alt="그라데이션" class="hover-image">
+                        </td>
                         <td class="price">여 23만 / 남 25만</td>
                     </tr>
                     <tr>
-                        <td>콤보</td>
+                        <td class="price-item">
+                            콤보
+                            <img src="images/kombo.jpg" alt="콤보" class="hover-image">
+                        </td>
                         <td class="price">여 25만 / 남 27만</td>
                     </tr>
                 </table>
@@ -46,7 +60,9 @@
 
             <!-- 아이라인 -->
             <section class="info-section">
-                <h2 class="section-title">👁️ 아이라인</h2>
+                <h2 class="section-title title-hover">아이라인
+                    <img src="images/iline.png" alt="아이라인 예시" class="hover-image-large">
+                </h2>
                 <table class="price-table">
                     <tr>
                         <td>브라운 라인</td>
@@ -61,7 +77,9 @@
 
             <!-- 입술 -->
             <section class="info-section">
-                <h2 class="section-title">💋 입술</h2>
+                <h2 class="section-title title-hover">입술
+                    <img src="images/lip.png" alt="입술 예시" class="hover-image-large">
+                </h2>
                 <table class="price-table">
                     <tr>
                         <td>틴트립</td>
@@ -76,7 +94,7 @@
 
             <!-- 기타 -->
             <section class="info-section">
-                <h2 class="section-title">💎 기타</h2>
+                <h2 class="section-title">기타</h2>
                 <table class="price-table">
                     <tr>
                         <td>미인점</td>
@@ -94,7 +112,7 @@
             </section>
 
             <section class="info-section notice">
-                <p class="notice-text">💡 정확한 가격은 상담 후 확정됩니다. 시술 부위 및 상태에 따라 달라질 수 있습니다.</p>
+                <p class="notice-text">정확한 가격은 상담 후 확정됩니다. 시술 부위 및 상태에 따라 달라질 수 있습니다.</p>
                 <a href="http://pf.kakao.com/_mWXZj" target="_blank" class="cta-btn">예약 상담하기</a>
             </section>
         </main>

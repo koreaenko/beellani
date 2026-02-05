@@ -15,21 +15,32 @@
 </head>
 
 <body>
+    <!-- Language Selector -->
+    <div class="lang-selector">
+        <a href="index.html" class="lang-btn active">🇰🇷 한국어</a>
+        <a href="index-zh.html" class="lang-btn">🇨🇳 中文</a>
+        <a href="index-ja.html" class="lang-btn">🇯🇵 日本語</a>
+    </div>
+
     <!-- Hero Section with Sliding Images -->
     <section class="hero-section">
-        <!-- Sliding Image Track -->
-        <div class="image-slider">
-            <div class="slider-track">
-                <img src="images/gallery-1.png" alt="시술 이미지 1">
-                <img src="images/gallery-2.png" alt="시술 이미지 2">
-                <img src="images/gallery-3.png" alt="시술 이미지 3">
-                <img src="images/about.png" alt="벨라니 뷰티">
-                <!-- Duplicate for infinite loop -->
-                <img src="images/gallery-1.png" alt="시술 이미지 1">
-                <img src="images/gallery-2.png" alt="시술 이미지 2">
-                <img src="images/gallery-3.png" alt="시술 이미지 3">
-                <img src="images/about.png" alt="벨라니 뷰티">
-            </div>
+        <!-- Fade Image Gallery -->
+        <div class="image-fade-gallery">
+            <img src="images/main images/Gemini_Generated_Image_a1tcaoa1tcaoa1tc.png" alt="시술 이미지 1"
+                class="fade-image active">
+            <img src="images/main images/Gemini_Generated_Image_omrchvomrchvomrc.png" alt="시술 이미지 2" class="fade-image">
+            <img src="images/main images/Gemini_Generated_Image_rr3295rr3295rr32 (1).png" alt="시술 이미지 3"
+                class="fade-image">
+            <img src="images/main images/Generated Image February 01, 2026 - 11_56PM.jpeg" alt="시술 이미지 4"
+                class="fade-image">
+            <img src="images/main images/Generated Image February 01, 2026 - 11_58PM.jpeg" alt="시술 이미지 5"
+                class="fade-image">
+            <img src="images/main images/Generated Image February 02, 2026 - 12_02AM.jpeg" alt="시술 이미지 6"
+                class="fade-image">
+            <img src="images/main images/Generated Image February 02, 2026 - 12_06AM.jpeg" alt="시술 이미지 7"
+                class="fade-image">
+            <img src="images/main images/Generated Image February 02, 2026 - 12_21AM.jpeg" alt="시술 이미지 8"
+                class="fade-image">
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -47,7 +58,7 @@
             <h2 class="section-label">Quick Menu</h2>
             <div class="category-grid">
                 <!-- 1. 매장정보 -->
-                <a href="store-info.html" target="_blank" class="category-card">
+                <a href="store-info.html" class="category-card">
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
@@ -58,7 +69,7 @@
                 </a>
 
                 <!-- 2. 이벤트 -->
-                <a href="events.html" target="_blank" class="category-card">
+                <a href="events.html" class="category-card">
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <polygon
@@ -69,7 +80,7 @@
                 </a>
 
                 <!-- 3. 비용안내 -->
-                <a href="pricing.html" target="_blank" class="category-card">
+                <a href="pricing.html" class="category-card">
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <line x1="12" y1="1" x2="12" y2="23" />
@@ -79,22 +90,20 @@
                     <span class="card-title">비용안내</span>
                 </a>
 
-                <!-- 4. 예약하기 -->
-                <a href="https://naver.me/GDLjo1ZO" target="_blank" class="category-card featured">
+                <!-- 4. 갤러리 (포트폴리오) -->
+                <a href="gallery.html" class="category-card">
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                            <line x1="16" y1="2" x2="16" y2="6" />
-                            <line x1="8" y1="2" x2="8" y2="6" />
-                            <line x1="3" y1="10" x2="21" y2="10" />
-                            <path d="M9 16l2 2 4-4" />
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <polyline points="21 15 16 10 5 21" />
                         </svg>
                     </div>
-                    <span class="card-title">예약하기</span>
+                    <span class="card-title">갤러리</span>
                 </a>
 
                 <!-- 5. 수강안내 -->
-                <a href="course-info.html" target="_blank" class="category-card">
+                <a href="course-info.html" class="category-card">
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
@@ -105,7 +114,7 @@
                 </a>
 
                 <!-- 6. FAQ -->
-                <a href="faq.html" target="_blank" class="category-card">
+                <a href="faq.html" class="category-card">
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <circle cx="12" cy="12" r="10" />
@@ -116,11 +125,56 @@
                     <span class="card-title">FAQ</span>
                 </a>
             </div>
+
+            <!-- 예약하기 버튼 (가로로 긴 스타일) -->
+            <a href="https://pf.kakao.com/_mWXZj" target="_blank" class="reservation-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <path d="M9 16l2 2 4-4" />
+                </svg>
+                <span>예약하기</span>
+            </a>
         </div>
         <footer class="board-footer">
             <p>&copy; 2024 Bellani Beauty</p>
         </footer>
     </section>
+    <!-- Fix for back button animation reset -->
+    <script>
+        function restartFadeAnimation() {
+            const images = document.querySelectorAll('.fade-image');
+            images.forEach(function (img, index) {
+                // 애니메이션 완전 제거 후 재시작
+                img.style.animation = 'none';
+                img.offsetHeight; // reflow 강제
+                img.style.animation = '';
+                img.style.animationName = 'fadeGallery8';
+                img.style.animationDuration = '32s';
+                img.style.animationIterationCount = 'infinite';
+                img.style.animationDelay = (index * 4) + 's';
+            });
+        }
+
+        // 페이지 보여질 때마다 (뒤로가기 포함)
+        window.addEventListener('pageshow', function (event) {
+            restartFadeAnimation();
+        });
+
+        // 탭이 다시 활성화될 때
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState === 'visible') {
+                restartFadeAnimation();
+            }
+        });
+
+        // 페이지 포커스 받을 때
+        window.addEventListener('focus', function () {
+            restartFadeAnimation();
+        });
+    </script>
 </body>
 
 </html>
