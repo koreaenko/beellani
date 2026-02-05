@@ -294,6 +294,23 @@ body {
     border: 1px solid var(--color-accent);
 }
 
+/* Event Category Title */
+.info-section.event-category {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-title {
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
 /* Course List */
 .course-list {
     display: flex;
