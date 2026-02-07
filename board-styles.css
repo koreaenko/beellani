@@ -20,7 +20,7 @@
 
 .lang-btn {
     font-size: 0.75rem;
-    color: #5A6B69;
+    color: #6B6359;
     text-decoration: none;
     padding: 4px 8px;
     border-radius: 15px;
@@ -28,24 +28,25 @@
 }
 
 .lang-btn:hover {
-    background: rgba(92, 191, 179, 0.1);
-    color: #5CBFB3;
+    background: rgba(184, 149, 107, 0.1);
+    color: #B8956B;
 }
 
 .lang-btn.active {
-    background: #5CBFB3;
+    background: linear-gradient(135deg, #B8956B 0%, #9A7B5A 100%);
     color: white;
 }
 
 :root {
-    --color-primary: #5CBFB3;
-    --color-primary-dark: #4AA99E;
-    --color-primary-light: #8ED5CC;
-    --color-accent: #B8E8E3;
-    --color-dark: #2D3E3C;
-    --color-gray: #5A6B69;
-    --color-gray-light: #8A9A98;
-    --color-light: #F5FAFA;
+    /* 럭셔리 아이보리 테마 */
+    --color-primary: #B8956B;
+    --color-primary-dark: #9A7B5A;
+    --color-primary-light: #D4B896;
+    --color-accent: #E8DFD5;
+    --color-dark: #3D3630;
+    --color-gray: #6B6359;
+    --color-gray-light: #9A938B;
+    --color-light: #FAF8F5;
     --color-white: #ffffff;
 
     --font-display: 'Playfair Display', serif;
@@ -177,9 +178,9 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg,
-            rgba(255, 255, 255, 0.5) 0%,
-            rgba(255, 255, 255, 0.7) 50%,
-            rgba(255, 255, 255, 0.95) 100%);
+            rgba(255, 253, 249, 0.5) 0%,
+            rgba(255, 253, 249, 0.7) 50%,
+            rgba(255, 253, 249, 0.95) 100%);
     z-index: 5;
 }
 
@@ -227,7 +228,7 @@ body {
 
 /* ========== CATEGORY SECTION ========== */
 .category-section {
-    background: var(--color-white);
+    background: linear-gradient(180deg, #FFFDF9 0%, #FAF8F5 100%);
     padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -258,20 +259,20 @@ body {
 
 /* Category Card - Minimal */
 .category-card {
-    background: var(--color-white);
+    background: #FFFDF9;
     border-radius: 10px;
     padding: 0.8rem 0.5rem;
     text-align: center;
     text-decoration: none;
     color: var(--color-dark);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(92, 191, 179, 0.1);
+    border: 1px solid rgba(184, 149, 107, 0.12);
     transition: all var(--transition-base);
 }
 
 .category-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(92, 191, 179, 0.15);
+    box-shadow: 0 8px 20px rgba(184, 149, 107, 0.18);
     border-color: var(--color-primary-light);
 }
 
@@ -292,7 +293,7 @@ body {
     width: 32px;
     height: 32px;
     margin: 0 auto 0.4rem;
-    background: #E8F7F5;
+    background: linear-gradient(135deg, #FAF8F5 0%, #F5F0E8 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -333,13 +334,13 @@ body {
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(92, 191, 179, 0.3);
+    box-shadow: 0 4px 15px rgba(184, 149, 107, 0.35);
     transition: all var(--transition-base);
 }
 
 .reservation-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(92, 191, 179, 0.4);
+    box-shadow: 0 6px 25px rgba(184, 149, 107, 0.45);
 }
 
 .reservation-btn svg {

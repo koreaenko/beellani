@@ -4,15 +4,16 @@
    ===================================================== */
 
 :root {
-    --color-primary: #5CBFB3;
-    --color-primary-dark: #4AA99E;
-    --color-primary-light: #8ED5CC;
-    --color-accent: #B8E8E3;
-    --color-dark: #2D3E3C;
-    --color-gray: #5A6B69;
-    --color-gray-light: #8A9A98;
-    --color-light: #F5FAFA;
-    --color-white: #ffffff;
+    /* 럭셔리 아이보리 테마 */
+    --color-primary: #B8956B;
+    --color-primary-dark: #9A7B5A;
+    --color-primary-light: #D4B896;
+    --color-accent: #E8DFD5;
+    --color-dark: #3D3630;
+    --color-gray: #6B6359;
+    --color-gray-light: #9A938B;
+    --color-light: #FAF8F5;
+    --color-white: #FFFDF9;
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'Noto Sans KR', sans-serif;
@@ -86,7 +87,7 @@ body {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(92, 191, 179, 0.1);
+    border: 1px solid rgba(184, 149, 107, 0.15);
 }
 
 .section-title {
@@ -230,7 +231,7 @@ body {
 
 /* Notice Section */
 .info-section.notice {
-    background: #FAFAFA;
+    background: linear-gradient(135deg, #FAF8F5 0%, #F5F0E8 100%);
     text-align: center;
 }
 
@@ -255,7 +256,7 @@ body {
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(92, 191, 179, 0.4);
+    box-shadow: 0 5px 20px rgba(184, 149, 107, 0.4);
 }
 
 /* Event Links */

@@ -11,6 +11,48 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="detail-page.css">
+    <style>
+        /* 触摸提示 */
+        .touch-hint {
+            display: inline-block;
+            margin-left: 6px;
+            font-size: 0.85em;
+            animation: pointBounce 1.5s ease-in-out infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes pointBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-3px);
+            }
+        }
+
+        .image-guide {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--color-gray-light);
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: rgba(184, 149, 107, 0.08);
+            border-radius: 8px;
+        }
+
+        .image-guide span {
+            animation: pointBounce 1.5s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        .price-item,
+        .title-hover {
+            color: var(--color-primary-dark);
+        }
+    </style>
 </head>
 
 <body>
@@ -22,34 +64,38 @@
         </header>
 
         <main class="page-content">
+            <div class="image-guide">
+                <span>👆</span> 点击项目可以查看示例图片
+            </div>
+
             <!-- 眉毛 -->
             <section class="info-section">
                 <h2 class="section-title">眉毛</h2>
                 <table class="price-table">
                     <tr>
                         <td class="price-item">
-                            丝雾眉
-                            <img src="images/hairstroke.png" alt="丝雾眉" class="hover-image">
+                            丝雾眉 <span class="touch-hint">👆</span>
+                            <img src="images/hairstroke.jpeg" alt="丝雾眉" class="hover-image">
                         </td>
                         <td class="price">女 38万 / 男 40万</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            雾眉
+                            雾眉 <span class="touch-hint">👆</span>
                             <img src="images/embo.jpg" alt="雾眉" class="hover-image">
                         </td>
                         <td class="price">女 20万 / 男 22万</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            渐变眉
+                            渐变眉 <span class="touch-hint">👆</span>
                             <img src="images/gra.jpg" alt="渐变眉" class="hover-image">
                         </td>
                         <td class="price">女 23万 / 男 25万</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            组合眉
+                            组合眉 <span class="touch-hint">👆</span>
                             <img src="images/kombo.jpg" alt="组合眉" class="hover-image">
                         </td>
                         <td class="price">女 25万 / 男 27万</td>
@@ -59,7 +105,7 @@
 
             <!-- 眼线 -->
             <section class="info-section">
-                <h2 class="section-title title-hover">眼线
+                <h2 class="section-title title-hover">眼线 <span class="touch-hint">👆</span>
                     <img src="images/iline.png" alt="眼线示例" class="hover-image-large">
                 </h2>
                 <table class="price-table">
@@ -76,7 +122,7 @@
 
             <!-- 嘴唇 -->
             <section class="info-section">
-                <h2 class="section-title title-hover">嘴唇
+                <h2 class="section-title title-hover">嘴唇 <span class="touch-hint">👆</span>
                     <img src="images/lip.png" alt="嘴唇示例" class="hover-image-large">
                 </h2>
                 <table class="price-table">

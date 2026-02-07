@@ -11,6 +11,48 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="detail-page.css">
+    <style>
+        /* タッチヒント */
+        .touch-hint {
+            display: inline-block;
+            margin-left: 6px;
+            font-size: 0.85em;
+            animation: pointBounce 1.5s ease-in-out infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes pointBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-3px);
+            }
+        }
+
+        .image-guide {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--color-gray-light);
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: rgba(184, 149, 107, 0.08);
+            border-radius: 8px;
+        }
+
+        .image-guide span {
+            animation: pointBounce 1.5s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        .price-item,
+        .title-hover {
+            color: var(--color-primary-dark);
+        }
+    </style>
 </head>
 
 <body>
@@ -22,34 +64,38 @@
         </header>
 
         <main class="page-content">
+            <div class="image-guide">
+                <span>👆</span> 項目をタッチすると例の画像が表示されます
+            </div>
+
             <!-- 眉毛 -->
             <section class="info-section">
                 <h2 class="section-title">眉毛</h2>
                 <table class="price-table">
                     <tr>
                         <td class="price-item">
-                            ヘアストローク
-                            <img src="images/hairstroke.png" alt="ヘアストローク" class="hover-image">
+                            ヘアストローク <span class="touch-hint">👆</span>
+                            <img src="images/hairstroke.jpeg" alt="ヘアストローク" class="hover-image">
                         </td>
                         <td class="price">女性 38万 / 男性 40万</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            エンボ
+                            エンボ <span class="touch-hint">👆</span>
                             <img src="images/embo.jpg" alt="エンボ" class="hover-image">
                         </td>
                         <td class="price">女性 20万 / 男性 22万</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            グラデーション
+                            グラデーション <span class="touch-hint">👆</span>
                             <img src="images/gra.jpg" alt="グラデーション" class="hover-image">
                         </td>
                         <td class="price">女性 23万 / 男性 25万</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            コンボ
+                            コンボ <span class="touch-hint">👆</span>
                             <img src="images/kombo.jpg" alt="コンボ" class="hover-image">
                         </td>
                         <td class="price">女性 25万 / 男性 27万</td>
@@ -59,7 +105,7 @@
 
             <!-- アイライン -->
             <section class="info-section">
-                <h2 class="section-title title-hover">アイライン
+                <h2 class="section-title title-hover">アイライン <span class="touch-hint">👆</span>
                     <img src="images/iline.png" alt="アイライン例" class="hover-image-large">
                 </h2>
                 <table class="price-table">
@@ -76,7 +122,7 @@
 
             <!-- 唇 -->
             <section class="info-section">
-                <h2 class="section-title title-hover">唇
+                <h2 class="section-title title-hover">唇 <span class="touch-hint">👆</span>
                     <img src="images/lip.png" alt="唇例" class="hover-image-large">
                 </h2>
                 <table class="price-table">

@@ -12,6 +12,53 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
     <link rel="stylesheet" href="detail-page.css">
+    <style>
+        /* 터치 유도 손가락 아이콘 */
+        .touch-hint {
+            display: inline-block;
+            margin-left: 6px;
+            font-size: 0.85em;
+            animation: pointBounce 1.5s ease-in-out infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes pointBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-3px);
+            }
+        }
+
+        /* 안내 문구 */
+        .image-guide {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--color-gray-light);
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: rgba(184, 149, 107, 0.08);
+            border-radius: 8px;
+        }
+
+        .image-guide span {
+            animation: pointBounce 1.5s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        /* 이미지 있는 항목 스타일 강화 */
+        .price-item {
+            color: var(--color-primary-dark);
+        }
+
+        .title-hover {
+            color: var(--color-primary-dark);
+        }
+    </style>
 </head>
 
 <body>
@@ -23,34 +70,39 @@
         </header>
 
         <main class="page-content">
+            <!-- 안내 문구 -->
+            <div class="image-guide">
+                <span>👆</span> 항목을 터치하면 예시 이미지를 볼 수 있어요
+            </div>
+
             <!-- 눈썹 -->
             <section class="info-section">
                 <h2 class="section-title">눈썹</h2>
                 <table class="price-table">
                     <tr>
                         <td class="price-item">
-                            헤어스트록
-                            <img src="images/hairstroke.png" alt="헤어스트록" class="hover-image">
+                            헤어스트록 <span class="touch-hint">👆</span>
+                            <img src="images/hairstroke.jpeg" alt="헤어스트록" class="hover-image">
                         </td>
                         <td class="price">여 38만 / 남 40만</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            엠보
+                            엠보 <span class="touch-hint">👆</span>
                             <img src="images/embo.jpg" alt="엠보" class="hover-image">
                         </td>
                         <td class="price">여 20만 / 남 22만</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            그라데이션
+                            그라데이션 <span class="touch-hint">👆</span>
                             <img src="images/gra.jpg" alt="그라데이션" class="hover-image">
                         </td>
                         <td class="price">여 23만 / 남 25만</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            콤보
+                            콤보 <span class="touch-hint">👆</span>
                             <img src="images/kombo.jpg" alt="콤보" class="hover-image">
                         </td>
                         <td class="price">여 25만 / 남 27만</td>
@@ -60,7 +112,7 @@
 
             <!-- 아이라인 -->
             <section class="info-section">
-                <h2 class="section-title title-hover">아이라인
+                <h2 class="section-title title-hover">아이라인 <span class="touch-hint">👆</span>
                     <img src="images/iline.png" alt="아이라인 예시" class="hover-image-large">
                 </h2>
                 <table class="price-table">
@@ -77,7 +129,7 @@
 
             <!-- 입술 -->
             <section class="info-section">
-                <h2 class="section-title title-hover">입술
+                <h2 class="section-title title-hover">입술 <span class="touch-hint">👆</span>
                     <img src="images/lip.png" alt="입술 예시" class="hover-image-large">
                 </h2>
                 <table class="price-table">
