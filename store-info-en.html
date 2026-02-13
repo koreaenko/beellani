@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Info | Bellani Beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="detail-page.css">
+    <link rel="stylesheet" href="board-styles.css">
+</head>
+
+<body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher" id="langSwitcher">
+        <div class="lang-toggle" onclick="document.getElementById('langSwitcher').classList.toggle('open')">
+            <span class="globe-icon">🌐</span>
+            <span>EN</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="lang-dropdown">
+            <a href="store-info.html" class="lang-option"><span class="flag">🇰🇷</span> 한국어 <span
+                    class="check">✓</span></a>
+            <a href="store-info-en.html" class="lang-option active"><span class="flag">🇺🇸</span> English <span
+                    class="check">✓</span></a>
+            <a href="store-info-zh.html" class="lang-option"><span class="flag">🇨🇳</span> 中文 <span
+                    class="check">✓</span></a>
+            <a href="store-info-ja.html" class="lang-option"><span class="flag">🇯🇵</span> 日本語 <span
+                    class="check">✓</span></a>
+        </div>
+    </div>
+    <script>document.addEventListener('click', function (e) { var s = document.getElementById('langSwitcher'); if (s && !s.contains(e.target)) s.classList.remove('open') });</script>
+
+    <div class="page-container">
+        <header class="page-header">
+            <a href="index-en.html" class="back-link">🏠 Home</a>
+            <a href="javascript:history.back()" class="back-link">← Back</a>
+            <h1 class="page-title">Store Info</h1>
+        </header>
+
+        <main class="page-content">
+            <!-- Bellani Intro -->
+            <section class="info-section brand-intro">
+                <h2 class="brand-name">Bellani Beauty</h2>
+                <p class="brand-subtitle">Refined Beauty · Since 2010</p>
+                <div class="brand-image">
+                    <img src="images/artist.jpg" alt="Bellani Artist">
+                </div>
+            </section>
+
+            <!-- Philosophy -->
+            <section class="info-section">
+                <h2 class="section-title">Philosophy</h2>
+                <div class="philosophy-content">
+                    <p>With 15 years of hands-on experience,<br>
+                        Bellani values <strong>consistent quality</strong> over quick results,<br>
+                        and <strong>personalized standards</strong> over trends.</p>
+
+                    <p>We don't apply the same design to every client.<br>
+                        Considering eye shape, facial proportions, muscle movement, and daily care habits,<br>
+                        we aim for natural results that last, not just for today but over time.</p>
+
+                    <p class="highlight-text">What 15 years of facing countless faces has taught us:<br>
+                        <em>"Precise judgment lasts longer than excessive technique."</em><br>
+                        Bellani is a studio that has upheld this standard.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Hygiene -->
+            <section class="info-section">
+                <h2 class="section-title">Hygiene Management</h2>
+                <div class="philosophy-content">
+                    <p>Over many years in the field,<br>
+                        we've come to realize that hygiene is not optional, but a <strong>fundamental
+                            prerequisite</strong> for results.</p>
+
+                    <p>Bellani manages all treatment tools<br>
+                        with a <strong>per-client individual management principle</strong>.<br>
+                        Products and tools that come in direct contact with the skin<br>
+                        are thoroughly managed according to established hygiene standards.
+                    </p>
+
+                    <p>Our treatment spaces are always maintained with cleaning and sterilization as the standard,<br>
+                        and our hygiene processes are transparently communicated so clients can feel confident.</p>
+
+                    <p class="highlight-text"><em>15 years of experience was not just about technique,<br>
+                            but about knowing which standards must be upheld.</em></p>
+                </div>
+            </section>
+
+            <!-- Location -->
+            <section class="info-section">
+                <h2 class="section-title">Location</h2>
+                <ul class="info-list">
+                    <li>
+                        <strong>Address:</strong> 2F, 59 Pyeongchon-daero 223beon-gil (Seolyeon Core), Anyang
+                        <a href="https://naver.me/GDLjo1ZO" target="_blank" class="map-link" title="View Map">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><strong>Transit:</strong> 2-min walk from Beomgye Station Exit 2</li>
+                </ul>
+            </section>
+
+            <!-- Hours -->
+            <section class="info-section">
+                <h2 class="section-title">Business Hours</h2>
+                <ul class="info-list">
+                    <li><strong>Weekdays:</strong> 10:00 ~ 21:00</li>
+                    <li><strong>Saturday:</strong> 10:00 - 18:00</li>
+                    <li><strong>Holidays:</strong> Closed on public holidays</li>
+                </ul>
+            </section>
+
+            <!-- Contact -->
+            <section class="info-section">
+                <h2 class="section-title">Contact</h2>
+                <ul class="info-list">
+                    <li><strong>Phone:</strong> <a href="tel:031-386-8778">031-386-8778</a></li>
+                    <li><strong>Mobile:</strong> <a href="tel:010-9251-5509">010-9251-5509</a></li>
+                    <li><strong>KakaoTalk:</strong> <a href="http://pf.kakao.com/_mWXZj" target="_blank">KakaoTalk
+                            Channel</a>
+                    </li>
+                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/bellani_beauty/"
+                            target="_blank">@bellani_beauty</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2024 Bellani Beauty</p>
+        </footer>
+    </div>
+</body>
+
+</html>

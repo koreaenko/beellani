@@ -15,6 +15,27 @@
 </head>
 
 <body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher" id="langSwitcher">
+        <div class="lang-toggle" onclick="document.getElementById('langSwitcher').classList.toggle('open')">
+            <span class="globe-icon">🌐</span>
+            <span>KR</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="lang-dropdown">
+            <a href="course-info.html" class="lang-option active"><span class="flag">🇰🇷</span> 한국어 <span
+                    class="check">✓</span></a>
+            <a href="course-info-en.html" class="lang-option"><span class="flag">🇺🇸</span> English <span
+                    class="check">✓</span></a>
+            <a href="course-info-zh.html" class="lang-option"><span class="flag">🇨🇳</span> 中文 <span
+                    class="check">✓</span></a>
+            <a href="course-info-ja.html" class="lang-option"><span class="flag">🇯🇵</span> 日本語 <span
+                    class="check">✓</span></a>
+        </div>
+    </div>
+    <link rel="stylesheet" href="board-styles.css">
+    <script>document.addEventListener('click', function (e) { var s = document.getElementById('langSwitcher'); if (s && !s.contains(e.target)) s.classList.remove('open') });</script>
+
     <div class="page-container">
         <header class="page-header">
             <a href="index.html" class="back-link">🏠 홈</a>

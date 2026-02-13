@@ -15,11 +15,27 @@
 </head>
 
 <body>
-    <!-- Language Selector -->
-    <div class="lang-selector">
-        <a href="index.html" class="lang-btn active">🇰🇷 한국어</a>
-        <a href="index-zh.html" class="lang-btn">🇨🇳 中文</a>
-        <a href="index-ja.html" class="lang-btn">🇯🇵 日本語</a>
+    <!-- Language Switcher -->
+    <div class="lang-switcher" id="langSwitcher">
+        <div class="lang-toggle" onclick="document.getElementById('langSwitcher').classList.toggle('open')">
+            <span class="globe-icon">🌐</span>
+            <span>KR</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="lang-dropdown">
+            <a href="index.html" class="lang-option active">
+                <span class="flag">🇰🇷</span> 한국어 <span class="check">✓</span>
+            </a>
+            <a href="index-en.html" class="lang-option">
+                <span class="flag">🇺🇸</span> English <span class="check">✓</span>
+            </a>
+            <a href="index-zh.html" class="lang-option">
+                <span class="flag">🇨🇳</span> 中文 <span class="check">✓</span>
+            </a>
+            <a href="index-ja.html" class="lang-option">
+                <span class="flag">🇯🇵</span> 日本語 <span class="check">✓</span>
+            </a>
+        </div>
     </div>
 
     <!-- Hero Section with Sliding Images -->
@@ -173,6 +189,12 @@
         // 페이지 포커스 받을 때
         window.addEventListener('focus', function () {
             restartFadeAnimation();
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (e) {
+            var sw = document.getElementById('langSwitcher');
+            if (sw && !sw.contains(e.target)) sw.classList.remove('open');
         });
     </script>
 </body>

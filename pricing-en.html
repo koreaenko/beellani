@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>价格 | Bellani Beauty</title>
+    <title>Pricing | Bellani Beauty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="detail-page.css">
+    <link rel="stylesheet" href="board-styles.css">
     <style>
-        /* 触摸提示 */
         .touch-hint {
             display: inline-block;
             margin-left: 6px;
@@ -48,7 +48,10 @@
             display: inline-block;
         }
 
-        .price-item,
+        .price-item {
+            color: var(--color-primary-dark);
+        }
+
         .title-hover {
             color: var(--color-primary-dark);
         }
@@ -60,126 +63,126 @@
     <div class="lang-switcher" id="langSwitcher">
         <div class="lang-toggle" onclick="document.getElementById('langSwitcher').classList.toggle('open')">
             <span class="globe-icon">🌐</span>
-            <span>CN</span>
+            <span>EN</span>
             <span class="arrow">▼</span>
         </div>
         <div class="lang-dropdown">
             <a href="pricing.html" class="lang-option"><span class="flag">🇰🇷</span> 한국어 <span
                     class="check">✓</span></a>
-            <a href="pricing-en.html" class="lang-option"><span class="flag">🇺🇸</span> English <span
+            <a href="pricing-en.html" class="lang-option active"><span class="flag">🇺🇸</span> English <span
                     class="check">✓</span></a>
-            <a href="pricing-zh.html" class="lang-option active"><span class="flag">🇨🇳</span> 中文 <span
+            <a href="pricing-zh.html" class="lang-option"><span class="flag">🇨🇳</span> 中文 <span
                     class="check">✓</span></a>
             <a href="pricing-ja.html" class="lang-option"><span class="flag">🇯🇵</span> 日本語 <span
                     class="check">✓</span></a>
         </div>
     </div>
-    <link rel="stylesheet" href="board-styles.css">
     <script>document.addEventListener('click', function (e) { var s = document.getElementById('langSwitcher'); if (s && !s.contains(e.target)) s.classList.remove('open') });</script>
 
     <div class="page-container">
         <header class="page-header">
-            <a href="index-zh.html" class="back-link">🏠 首页</a>
-            <a href="javascript:history.back()" class="back-link">← 返回</a>
-            <h1 class="page-title">价格</h1>
+            <a href="index-en.html" class="back-link">🏠 Home</a>
+            <a href="javascript:history.back()" class="back-link">← Back</a>
+            <h1 class="page-title">Pricing</h1>
         </header>
 
         <main class="page-content">
             <div class="image-guide">
-                <span>👆</span> 点击项目可以查看示例图片
+                <span>👆</span> Tap an item to view a sample image
             </div>
 
-            <!-- 眉毛 -->
+            <!-- Eyebrows -->
             <section class="info-section">
-                <h2 class="section-title">眉毛</h2>
+                <h2 class="section-title">Eyebrows</h2>
                 <table class="price-table">
                     <tr>
                         <td class="price-item">
-                            丝雾眉 <span class="touch-hint">👆</span>
-                            <img src="images/hairstroke.jpeg" alt="丝雾眉" class="hover-image">
+                            Hair Stroke <span class="touch-hint">👆</span>
+                            <img src="images/hairstroke.jpeg" alt="Hair Stroke" class="hover-image">
                         </td>
-                        <td class="price">女 38万 / 男 40万</td>
+                        <td class="price">F ₩380K / M ₩400K</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            雾眉 <span class="touch-hint">👆</span>
-                            <img src="images/embo.jpg" alt="雾眉" class="hover-image">
+                            Embo <span class="touch-hint">👆</span>
+                            <img src="images/embo.jpg" alt="Embo" class="hover-image">
                         </td>
-                        <td class="price">女 20万 / 男 22万</td>
+                        <td class="price">F ₩200K / M ₩220K</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            渐变眉 <span class="touch-hint">👆</span>
-                            <img src="images/gra.jpg" alt="渐变眉" class="hover-image">
+                            Gradient <span class="touch-hint">👆</span>
+                            <img src="images/gra.jpg" alt="Gradient" class="hover-image">
                         </td>
-                        <td class="price">女 23万 / 男 25万</td>
+                        <td class="price">F ₩230K / M ₩250K</td>
                     </tr>
                     <tr>
                         <td class="price-item">
-                            组合眉 <span class="touch-hint">👆</span>
-                            <img src="images/kombo.jpg" alt="组合眉" class="hover-image">
+                            Combo <span class="touch-hint">👆</span>
+                            <img src="images/kombo.jpg" alt="Combo" class="hover-image">
                         </td>
-                        <td class="price">女 25万 / 男 27万</td>
+                        <td class="price">F ₩250K / M ₩270K</td>
                     </tr>
                 </table>
             </section>
 
-            <!-- 眼线 -->
+            <!-- Eyeliner -->
             <section class="info-section">
-                <h2 class="section-title title-hover">眼线 <span class="touch-hint">👆</span>
-                    <img src="images/iline.png" alt="眼线示例" class="hover-image-large">
+                <h2 class="section-title title-hover">Eyeliner <span class="touch-hint">👆</span>
+                    <img src="images/iline.png" alt="Eyeliner Example" class="hover-image-large">
                 </h2>
                 <table class="price-table">
                     <tr>
-                        <td>棕色眼线</td>
-                        <td class="price">20万</td>
+                        <td>Brown Line</td>
+                        <td class="price">₩200K</td>
                     </tr>
                     <tr>
-                        <td>棕色眼影线</td>
-                        <td class="price">25万</td>
+                        <td>Brown Shadow</td>
+                        <td class="price">₩250K</td>
                     </tr>
                 </table>
             </section>
 
-            <!-- 嘴唇 -->
+            <!-- Lips -->
             <section class="info-section">
-                <h2 class="section-title title-hover">嘴唇 <span class="touch-hint">👆</span>
-                    <img src="images/lip.png" alt="嘴唇示例" class="hover-image-large">
+                <h2 class="section-title title-hover">Lips <span class="touch-hint">👆</span>
+                    <img src="images/lip.png" alt="Lips Example" class="hover-image-large">
                 </h2>
                 <table class="price-table">
                     <tr>
-                        <td>染唇</td>
-                        <td class="price">35万</td>
+                        <td>Tint Lip</td>
+                        <td class="price">₩350K</td>
                     </tr>
                     <tr>
-                        <td>全唇</td>
-                        <td class="price">38万</td>
+                        <td>Full Lip</td>
+                        <td class="price">₩380K</td>
                     </tr>
                 </table>
             </section>
 
-            <!-- 其他 -->
+            <!-- Others -->
             <section class="info-section">
-                <h2 class="section-title">其他</h2>
+                <h2 class="section-title">Others</h2>
                 <table class="price-table">
                     <tr>
-                        <td>美人痣</td>
-                        <td class="price">5万</td>
+                        <td>Beauty Mark</td>
+                        <td class="price">₩50K</td>
                     </tr>
                     <tr>
-                        <td>SMP (头皮纹绣)</td>
-                        <td class="price">30万~</td>
+                        <td>SMP (Scalp Tattoo)</td>
+                        <td class="price">From ₩300K</td>
                     </tr>
                     <tr>
-                        <td>痕迹去除 (1次)</td>
-                        <td class="price">8万</td>
+                        <td>Old Pigment Removal (per session)</td>
+                        <td class="price">₩80K</td>
                     </tr>
                 </table>
             </section>
 
             <section class="info-section notice">
-                <p class="notice-text">准确价格在咨询后确定。根据施术部位和状态可能有所不同。</p>
-                <a href="http://pf.kakao.com/_mWXZj" target="_blank" class="cta-btn">预约咨询</a>
+                <p class="notice-text">Final pricing is confirmed after consultation. Prices may vary depending on
+                    treatment area and condition.</p>
+                <a href="http://pf.kakao.com/_mWXZj" target="_blank" class="cta-btn">Book Consultation</a>
             </section>
         </main>
 

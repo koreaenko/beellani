@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>活动 | Bellani Beauty</title>
+    <title>Events | Bellani Beauty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="detail-page.css">
+    <link rel="stylesheet" href="board-styles.css">
 </head>
 
 <body>
@@ -18,85 +19,85 @@
     <div class="lang-switcher" id="langSwitcher">
         <div class="lang-toggle" onclick="document.getElementById('langSwitcher').classList.toggle('open')">
             <span class="globe-icon">🌐</span>
-            <span>CN</span>
+            <span>EN</span>
             <span class="arrow">▼</span>
         </div>
         <div class="lang-dropdown">
             <a href="events.html" class="lang-option"><span class="flag">🇰🇷</span> 한국어 <span
                     class="check">✓</span></a>
-            <a href="events-en.html" class="lang-option"><span class="flag">🇺🇸</span> English <span
+            <a href="events-en.html" class="lang-option active"><span class="flag">🇺🇸</span> English <span
                     class="check">✓</span></a>
-            <a href="events-zh.html" class="lang-option active"><span class="flag">🇨🇳</span> 中文 <span
+            <a href="events-zh.html" class="lang-option"><span class="flag">🇨🇳</span> 中文 <span
                     class="check">✓</span></a>
             <a href="events-ja.html" class="lang-option"><span class="flag">🇯🇵</span> 日本語 <span
                     class="check">✓</span></a>
         </div>
     </div>
-    <link rel="stylesheet" href="board-styles.css">
     <script>document.addEventListener('click', function (e) { var s = document.getElementById('langSwitcher'); if (s && !s.contains(e.target)) s.classList.remove('open') });</script>
 
     <div class="page-container">
         <header class="page-header">
-            <a href="index-zh.html" class="back-link">🏠 首页</a>
-            <a href="javascript:history.back()" class="back-link">← 返回</a>
-            <h1 class="page-title">活动</h1>
+            <a href="index-en.html" class="back-link">🏠 Home</a>
+            <a href="javascript:history.back()" class="back-link">← Back</a>
+            <h1 class="page-title">Events</h1>
         </header>
 
         <main class="page-content">
-            <!-- 半永久 EVENT 섹션 -->
+            <!-- Semi-Permanent Makeup EVENT -->
             <section class="info-section event-category">
-                <h2 class="category-title">💎 半永久 EVENT</h2>
+                <h2 class="category-title">💎 Semi-Permanent Makeup EVENT</h2>
             </section>
 
             <section class="info-section">
-                <h2 class="section-title">👥 介绍·同行优惠</h2>
+                <h2 class="section-title">👥 Referral & Group Discount</h2>
                 <ul class="info-list">
-                    <li>被介绍后到访可享 <strong>2万韩元优惠</strong></li>
-                    <li>与朋友同时预约可享 <strong>2万韩元优惠</strong></li>
+                    <li>Referred visit: <strong>₩20,000 discount</strong></li>
+                    <li>Book with a friend simultaneously: <strong>₩20,000 discount</strong></li>
                 </ul>
             </section>
 
             <section class="info-section">
-                <h2 class="section-title">🎖 特定人群优惠</h2>
+                <h2 class="section-title">🎖 Special Discounts</h2>
                 <ul class="info-list">
-                    <li>军人客户 <strong>2万韩元优惠</strong></li>
-                    <li>60岁以上客户 <strong>2万韩元优惠</strong></li>
+                    <li>Military personnel: <strong>₩20,000 discount</strong></li>
+                    <li>Clients aged 60+: <strong>₩20,000 discount</strong></li>
                 </ul>
             </section>
 
             <section class="info-section">
-                <h2 class="section-title">✨ 套餐优惠</h2>
+                <h2 class="section-title">✨ Multi-Area Discount</h2>
                 <ul class="info-list">
-                    <li>同时进行2个以上部位施术 <strong>额外2万韩元优惠</strong></li>
+                    <li>2+ treatment areas at once: <strong>additional ₩20,000 discount</strong></li>
                 </ul>
             </section>
 
             <section class="info-section">
-                <h2 class="section-title">🔁 回访优惠</h2>
+                <h2 class="section-title">🔁 Returning Client Benefit</h2>
                 <ul class="info-list">
-                    <li>回访客户 → <strong>5万韩元优惠</strong></li>
+                    <li>Returning clients → <strong>₩50,000 discount</strong></li>
                 </ul>
             </section>
 
             <section class="info-section notice">
-                <p class="notice-text">※ 刷卡支付时不适用优惠<br>※ 现金支付（转账）时适用优惠</p>
+                <p class="notice-text">※ Discounts not applicable for card payments<br>※ Discounts apply for cash
+                    payments (bank transfer)</p>
             </section>
 
-            <!-- 睫毛烫 EVENT 섹션 -->
+            <!-- Lash Perm EVENT -->
             <section class="info-section event-category" style="margin-top: 3rem;">
-                <h2 class="category-title">✨ 睫毛烫 EVENT</h2>
+                <h2 class="category-title">✨ Lash Perm EVENT</h2>
             </section>
 
             <section class="info-section">
                 <ul class="info-list">
-                    <li>首次来访 <strong>1万韩元优惠</strong>（刷卡支付为5千韩元）</li>
-                    <li>介绍朋友时 介绍者和朋友双方各 <strong>5千韩元积分</strong></li>
+                    <li>First visit: <strong>₩10,000 discount</strong> (₩5,000 for card payment)</li>
+                    <li>Refer a friend: both referrer and friend get <strong>₩5,000 credit</strong></li>
                 </ul>
             </section>
 
             <section class="info-section highlight">
-                <h2 class="section-title">正在进行的活动</h2>
-                <p class="event-notice">目前正在进行的活动请通过KakaoTalk频道或Instagram确认！</p>
+                <h2 class="section-title">Ongoing Events</h2>
+                <p class="event-notice">Check our KakaoTalk channel or Instagram for current events!</p>
                 <div class="event-links">
                     <a href="http://pf.kakao.com/_mWXZj" target="_blank" class="event-btn">KakaoTalk</a>
                     <a href="https://www.instagram.com/bellani_beauty/" target="_blank" class="event-btn">Instagram</a>

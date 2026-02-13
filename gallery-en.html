@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>画廊 | Bellani Beauty</title>
+    <title>Gallery | Bellani Beauty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="detail-page.css">
+    <link rel="stylesheet" href="board-styles.css">
 </head>
 
 <body>
@@ -18,46 +19,43 @@
     <div class="lang-switcher" id="langSwitcher">
         <div class="lang-toggle" onclick="document.getElementById('langSwitcher').classList.toggle('open')">
             <span class="globe-icon">🌐</span>
-            <span>CN</span>
+            <span>EN</span>
             <span class="arrow">▼</span>
         </div>
         <div class="lang-dropdown">
             <a href="gallery.html" class="lang-option"><span class="flag">🇰🇷</span> 한국어 <span
                     class="check">✓</span></a>
-            <a href="gallery-en.html" class="lang-option"><span class="flag">🇺🇸</span> English <span
+            <a href="gallery-en.html" class="lang-option active"><span class="flag">🇺🇸</span> English <span
                     class="check">✓</span></a>
-            <a href="gallery-zh.html" class="lang-option active"><span class="flag">🇨🇳</span> 中文 <span
+            <a href="gallery-zh.html" class="lang-option"><span class="flag">🇨🇳</span> 中文 <span
                     class="check">✓</span></a>
             <a href="gallery-ja.html" class="lang-option"><span class="flag">🇯🇵</span> 日本語 <span
                     class="check">✓</span></a>
         </div>
     </div>
-    <link rel="stylesheet" href="board-styles.css">
     <script>document.addEventListener('click', function (e) { var s = document.getElementById('langSwitcher'); if (s && !s.contains(e.target)) s.classList.remove('open') });</script>
 
     <div class="page-container">
         <header class="page-header">
-            <a href="index-zh.html" class="back-link">🏠 首页</a>
-            <a href="javascript:history.back()" class="back-link">← 返回</a>
-            <h1 class="page-title">画廊</h1>
+            <a href="index-en.html" class="back-link">🏠 Home</a>
+            <a href="javascript:history.back()" class="back-link">← Back</a>
+            <h1 class="page-title">Gallery</h1>
         </header>
 
         <main class="page-content">
             <section class="info-section">
-                <h2 class="section-title">作品集</h2>
-                <p class="notice-text">您可以在这里查看施术成果。</p>
-                <!-- 作品集图片位置 -->
+                <h2 class="section-title">Portfolio</h2>
+                <p class="notice-text">View our treatment results.</p>
                 <div class="gallery-grid">
-                    <!-- 图片待添加 -->
                     <p style="text-align: center; color: #8A9A98; padding: 2rem 0;">
-                        作品集图片正在准备中。
+                        Portfolio images are being prepared.
                     </p>
                 </div>
             </section>
 
             <section class="info-section notice">
-                <p class="notice-text">更多施术成果<br>请在Instagram查看！</p>
-                <a href="https://www.instagram.com/bellani_beauty/" target="_blank" class="cta-btn">前往Instagram</a>
+                <p class="notice-text">See more of our work<br>on Instagram!</p>
+                <a href="https://www.instagram.com/bellani_beauty/" target="_blank" class="cta-btn">Visit Instagram</a>
             </section>
         </main>
 
